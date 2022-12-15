@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" pickOnBounds="false" prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: #32394D;" styleClass="body" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ClientController">
+   <children>
+      <Pane layoutX="385.0" layoutY="10.0" prefHeight="41.0" prefWidth="200.0" style="-fx-background-color: #ede3da;" />
+      <ListView fx:id="clientList" layoutX="14.0" layoutY="89.0" prefHeight="392.0" prefWidth="227.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" />
+      <Text fill="#d8c5b1" layoutX="72.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CLIENT LIST">
+         <font>
+            <Font name="Arial Bold" size="17.0" />
+         </font>
+      </Text>
+      <Text fill="#d8c5b1" layoutX="22.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="To send message for group of clients,&#10;hold Ctrl for Windows | Cmnd for Mac&#10;and click on which clients you want" textAlignment="JUSTIFY" wrappingWidth="202.50244140625">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </Text>
+      <Text fx:id="clientNumber" layoutX="416.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CLIENT #" textAlignment="CENTER" wrappingWidth="137.896484375">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text fill="#d8c5b1" layoutX="280.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Chat Box">
+         <font>
+            <Font name="Arial Bold" size="17.0" />
+         </font>
+      </Text>
+      <ListView fx:id="chatList" layoutX="280.0" layoutY="98.0" prefHeight="200.0" prefWidth="410.0" style="-fx-border-color: #d8c5b1; -fx-border-width: 5;" AnchorPane.rightAnchor="10.0" />
+      <Text fill="#d8c5b1" layoutX="280.0" layoutY="350.0" strokeType="OUTSIDE" strokeWidth="0.0" text="To">
+         <font>
+            <Font name="Arial Bold" size="17.0" />
+         </font>
+      </Text>
+      <TextField fx:id="chatInput" layoutX="280.0" layoutY="385.0" prefHeight="40.0" prefWidth="410.0" AnchorPane.rightAnchor="10.0" />
+      <ListView fx:id="receiveList" layoutX="337.0" layoutY="323.0" orientation="HORIZONTAL" prefHeight="40.0" prefWidth="300.0" />
+      <HBox layoutX="395.0" layoutY="445.0" prefHeight="30.0" prefWidth="180.0" spacing="40.0">
+         <children>
+            <Button fx:id="sendAllBtn" mnemonicParsing="false" onAction="#sendAllBtnMethod" prefHeight="30.0" prefWidth="70.0" style="-fx-background-color: #d8c5b1;" text="Send All">
+               <font>
+                  <Font name="Arial" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="sendBtn" mnemonicParsing="false" onAction="#sendBtnMethod" prefHeight="30.0" prefWidth="70.0" style="-fx-background-color: #d8c5b1;" text="Send">
+               <font>
+                  <Font name="Arial" size="13.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

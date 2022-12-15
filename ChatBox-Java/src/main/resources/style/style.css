@@ -1,0 +1,20 @@
+.body {
+    -fx-font-family: "Arial";
+}
+
+#chatList {
+    -fx-font-family: "Arial";
+}
+
+#chatList .list-cell {
+    -fx-font-family: "Arial";
+    -fx-background-color: white;
+}
+
+#clientList {
+    -fx-font-family: "Arial";
+}
+
+#clientList .list-cell {
+    -fx-font-family: "Arial";
+}
